@@ -21,7 +21,7 @@ public class OnlineBookAppApplication implements CommandLineRunner{
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
 		bookService.getAllBooks().forEach(System.out::println);
-		bookService.getByAuthor("Visva").forEach(System.out::println);
+		bookService.getByAuthor("Vis").forEach(System.out::println);
 	
 		
 	}
