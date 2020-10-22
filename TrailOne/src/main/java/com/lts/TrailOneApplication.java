@@ -13,6 +13,7 @@ import com.lts.autowiring.ShapeFactory;
 import com.lts.constr.Student;
 import com.lts.foodwiring.FoodPanda;
 import com.lts.foodwiring.Menu;
+import com.lts.mileage.VehicleDetails;
 import com.lts.setter.Employee;
 
 @SpringBootApplication
@@ -33,6 +34,9 @@ public class TrailOneApplication implements CommandLineRunner {
 		
 		ShapeFactory shapeFactory = context.getBean(ShapeFactory.class);
 		shapeFactory.printArea(20, 10, 1);
+		
+		VehicleDetails vehicleDetails = context.getBean(VehicleDetails.class);
+		vehicleDetails.getMileage(3.5, "Car");
 		
 		FoodPanda foodPanda = context.getBean(FoodPanda.class);
 		List<String> menuList = foodPanda.showMenu("Chinese");
