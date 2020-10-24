@@ -16,8 +16,8 @@ import com.bookapp.exception.BookNotFoundException;
 import com.bookapp.model.Book;
 import com.bookapp.service.BookService;
 
-@RestController
-@RequestMapping("/bok-api")
+
+//@RequestMapping("/bok-api")
 public class BookController {
 
 	@Autowired
